@@ -18,5 +18,5 @@ jobs:
             AWS_DEFAULT_REGION: "us-east-1"
         run: |
           sudo apt install texlive-latex-extra
-          pdflatex -interaction=nonstopmode resume.tex
+          pdflatex -interaction=nonstopmode resume.tex 2>&1 || true
           aws s3 cp resume.pdf s3://linkletter/public/resume.pdf
