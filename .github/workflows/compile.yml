@@ -21,4 +21,4 @@ jobs:
         run: |
           sudo apt install texlive-latex-extra
           pdflatex -interaction=nonstopmode resume.tex | tail -n2 | head -1 | awk '/1 page/ {rc = 1}; END { exit !rc }'
-          aws s3 cp resume.pdf s3://linkletter/public/resume.pdf
+          aws s3 cp resume.pdf s3://linkletter/public/Linkletter_Resume.pdf
