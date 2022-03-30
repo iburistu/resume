@@ -10,16 +10,18 @@
 %-----------NECESSARY PACKAGES-----------------
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
-\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{sectsty}
 \usepackage{tabu}
 \usepackage{contour}
 \usepackage{ulem}
 \usepackage{enumitem}
+\usepackage{microtype}
 
 %-----------FONT-----------------
 \usepackage[sc,osf]{mathpazo}
+\allsectionsfont{\sffamily}
 
 %-----------COMPATIBILITY-----------------
 \input{glyphtounicode}
@@ -32,7 +34,7 @@
 % Remove paragraph indentation
 \setlength\parindent{0pt}
 % Set up the header spacing
-\def\headerSpace{5.5pt}
+\def\headerSpace{11.5pt}
 
 %----------CUSTOM COMMANDS----------------- 
 
@@ -102,7 +104,7 @@
 
 %-----------EDUCATION-----------------
 \textbf{\fancyunderline{\Large Education}}
-\vspace{5pt}
+\vspace{4pt}
 
 \resumeEducation
     {University of Maine}{Orono, ME}
@@ -110,14 +112,14 @@
 
 %-----------TECHNICAL SKILLS-----------------
 \textbf{\fancyunderline{\Large Areas of Expertise}}
-\vspace{-4pt}
-    \begin{details}
-        \item[$-$] C/C++, Python, JavaScript, MATLAB, ARM Assembly, C\#/VB.NET, Rust, Terraform, $\LaTeX$
-        \item[$-$] AWS, Azure, GCP
-        \item[$-$] Flask, Node, Deno, ASP.NET, GraphQL, SQL
-        \item[$-$] React, Gatsby, Next
-        \item[$-$] Microsoft Windows, macOS \& Linux (Ubuntu/Debian \& Arch), Tableau
-    \end{details}
+\vspace{-2pt}
+
+\begin{itemize}[leftmargin=0pt]
+    \textbf{Languages:} C/C++, JavaScript, Python, MATLAB, ARM Assembly, Rust, SQL, $\LaTeX$ \\
+    \textbf{Frameworks:} React, Gatsby, Next \\
+    \textbf{DevOps / Automation:} Docker, Podman, Kubernetes, Ansible, Terraform \\
+    \textbf{Certifications:} AWS Certified Cloud Practitioner, Developer, SysOps Administrator, \& Solutions Architect
+\end{itemize}
 
 %-----------WORK EXPERIENCE-----------------
 \textbf{\fancyunderline{\Large Work Experience}}
@@ -128,58 +130,63 @@
 
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
         \hspace{-5pt}\textbf{Digital Technology Leadership Program} & Bangor, ME \\
-        \hspace{7.5pt} \fancyunderline{Digital Engineer} & \textit{\small February 2021 - Present} \\
+        \hspace{7.5pt} \fancyunderline{Technical Project Manager} & \textit{\small February 2022 - Present} \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{indentDetails}
-        \item[$-$] Pilot a scalable FreeRTOS IoT microcontroller to create standardized machine data ingestion process compatible with AWS Lookout for Equipment, AWS Timestream, and Vimana
-        \item[$-$] Lead condition based maintenance projects by partnering with Vimana and local maintenance teams to drive automation of preventative maintenance Maximo workorders based on machine usage, saving over \$800k annually on materials, labor, and lost production
+        \item[$-$] Lead development and rollout of a global template standard of machine monitoring for condition-based maintenance that leverages Operational Technology (OT), cloud-native, \& Internet of Things (IoT) best practices
+        \item[$-$] Deploy digital Andon solution, Lean Product Manager (LPM), for gas Lean lines in Bangor, ME
     \end{indentDetails}
-    \vspace{-10pt}
+    \vspace{-2pt}
+    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
+        \hspace{-5pt} & Bangor, ME \\
+        \hspace{7.5pt} \fancyunderline{Aero DT Analyst - Managed Care} & \textit{\small August 2021 - January 2022} \\
+    \end{tabular*}\vspace{-2.5pt}
+    \begin{indentDetails}
+        \item[$-$] Migrated 200+ commercial documents for 300+ downstream users to content management platform Seismic to support Gas Power Aeroderivatives New Unit growth of \$1.2B+ 
+        \item[$-$] Managed timelines \& supported gap-fit analysis of existing CRM processes vs. SFDC CRM solutions \& facilitated rollout of automations between Aero Alliance Joint Venture ERPs \& Gas Power systems
+    \end{indentDetails}
+    \vspace{-2pt}
+    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
+        \hspace{-5pt} & Bangor, ME \\
+        \hspace{7.5pt} \fancyunderline{Digital Engineer} & \textit{\small February 2021 - July 2021} \\
+    \end{tabular*}\vspace{-2.5pt}
+    \begin{indentDetails}
+        \item[$-$] Piloted a scalable FreeRTOS IoT microcontroller standard to create machine data ingestion pipeline \\ compatible with AWS Lookout for Equipment, AWS Timestream, and Vimana
+        \item[$-$] Orchestrated condition based maintenance automation with Vimana \& Maximo to enable preventative maintenance Maximo workorders based on machine usage, saving over \$800k annually on materials, labor, and lost production
+    \end{indentDetails}
+    \vspace{-6pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
         \hspace{-5pt} & Atlanta, GA \\
         \hspace{7.5pt} \fancyunderline{Data Analyst} & \textit{\small July 2020 - January 2021} \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{indentDetails}
-        \item[$-$] Identify the various data sources that contain gas power installed base data
-        \item[$-$] Develop robust visualizations using SQL and Tableau and drive competitive intelligence and \\ predictive insights on the data for product management teams to consume to improve GE Gas Power's order win rates
+        \item[$-$] Created robust visualizations using SQL and Tableau and drive competitive intelligence and predictive insights on installed base \& SFDC data for product management teams to consume to improve GE Gas Power's order win rates
     \end{indentDetails}
-    \vspace{-10pt}
+    \vspace{-6pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
         \hspace{-5pt} & Schenectady, NY \\
         \hspace{-7.5pt} \fancyunderline{Digital Techonology Leadership Program Intern: Lead Mobile Developer} & \textit{\small June 2019 - August 2019} \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{details}
-        \item[$-$] Work on the Digital Project Execution Team to develop a responsive progressive web application \\ targeting mobile devices for an internal GE document management system which creates, sends, stores and archives contractual and commercial documents and correspondence for on-site \\ personnel, driving over \$200K of business benefits annually 
+        \item[$-$] Developed a responsive progressive web application \\ targeting mobile devices for an internal GE document management system which creates, sends, stores and archives contractual and commercial documents and correspondence for on-site \\ personnel, driving over \$200K of business benefits annually 
     \end{details}
-    \vspace{-10pt}
+    \vspace{-6pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
         \hspace{-5pt} & Bangor, ME \\
         \hspace{-7.5pt} \fancyunderline{GE Power Early Identification Intern} & \textit{\small July 2018 - March 2019; December 2019 - June 2020} \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{details}
-        \item[$-$] Lead development on a web application that quantifies employee performance based on\\ numerous metrics
-        \item[$-$] Work on an Agile team as a fullstack developer to create at-a-glance digital signage web applications that relay essential manufacturing data to supervisors and machinists
+        \item[$-$] Generated at-a-glance digital signage web applications that relay essential manufacturing data to supervisors and machinists
     \end{details}
 
-\vspace{4pt}
+    \vspace{2pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
         \hspace{-5pt}\textbf{\large University of Maine} & Orono, ME \\
         \hspace{-7.5pt} \fancyunderline{Teaching \& Research Assistant: College of Electrical and Computer Engineering} & \textit{\small August 2017 - May 2020} \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{details}
-        \item[$-$] Teach Mathematica and MATLAB software
-        \item[$-$] Program ATXMega, STM32L4 boards with C and ARM assembly
-        \item[$-$] Translate Arudino C code to STM32 C code for radar devices that determine wild beehive health with digital signal processing
+        \item[$-$] Programed ATXMega, STM32L4 boards with C and ARM assembly
+        \item[$-$] Translated Arudino C code to STM32 C code for radar devices that determine wild beehive health with digital signal processing
     \end{details}
-
-%-----------SPECIAL RECOGNITION & PROJECTS-----------------
-\textbf{\fancyunderline{\Large Certifications}}
-\vspace{4pt}
-
-\begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-    \hspace{-7.5pt} \textit{AWS Certified Cloud Practitioner} & April 2021 \\
-    \hspace{-7.5pt} \textit{AWS Certified Developer} & May 2021 \\
-    \hspace{-7.5pt} \textit{AWS Certified SysOps Administrator} & June 2021 \\
-\end{tabular*}\vspace{-2.5pt}
 
 \end{document}
