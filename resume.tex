@@ -34,7 +34,7 @@
 % Remove paragraph indentation
 \setlength\parindent{0pt}
 % Set up the header spacing
-\def\headerSpace{11.5pt}
+\def\headerSpace{32.5pt}
 
 %----------CUSTOM COMMANDS----------------- 
 
@@ -86,7 +86,7 @@
 % HEADER
 \newcommand{\header}[4]{
     \vspace{7pt}
-    \fancyunderline{#1\hspace{\headerSpace}|\hspace{\headerSpace}#2\hspace{\headerSpace}|\hspace{\headerSpace}#3\hspace{\headerSpace}|\hspace{\headerSpace}#4}
+    #1\hspace{\headerSpace}|\hspace{\headerSpace}#2\hspace{\headerSpace}|\hspace{\headerSpace}#3\hspace{\headerSpace}|\hspace{\headerSpace}#4
     \vspace{5pt}
 }
 
@@ -100,7 +100,7 @@
 \vspace{-8pt}
 
 %-----------HEADING-----------------
-\header{361 Harmony Road, Athens, ME 04912}{\href{mailto:zack@linkletter.dev}{zack@linkletter.dev}}{(207) 672-6122}{\href{https://linkletter.dev}{https:\slash\slash linkletter.dev}}
+\header{Bangor, ME}{\href{mailto:zack@linkletter.dev}{zack@linkletter.dev}}{(207) 672-6122}{\href{https://linkletter.dev}{https:\slash\slash linkletter.dev}}
 
 %-----------EDUCATION-----------------
 \textbf{\fancyunderline{\Large Education}}
@@ -108,81 +108,80 @@
 
 \resumeEducation
     {University of Maine}{Orono, ME}
-    {Computer Engineering, BS}{Graduated May 2020}{Electrical Engineering, BS}{Cumulative GPA: 3.58}
+    {Bachelor of Science, Computer Engineering}{Graduated May 2020}{Bachelor of Science, Electrical Engineering}{GPA: 3.58}
 
 %-----------TECHNICAL SKILLS-----------------
-\textbf{\fancyunderline{\Large Areas of Expertise}}
+\textbf{\fancyunderline{\Large Technical Skills}}
 \vspace{-2pt}
 
 \begin{itemize}[leftmargin=0pt]
     \textbf{Languages:} C/C++, JavaScript, Python, MATLAB, ARM Assembly, Rust, SQL, $\LaTeX$ \\
     \textbf{Frameworks:} React, Gatsby, Next \\
     \textbf{DevOps / Automation:} Docker, Podman, Kubernetes, Ansible, Terraform \\
-    \textbf{Certifications:} AWS Certified Cloud Practitioner, Developer, SysOps Administrator, \& Solutions Architect
+    \textbf{AWS Certifications:} Certified Cloud Practitioner, Developer, SysOps Administrator, Solutions Architect \\
+    \textbf{University Capstone:} Designed smart, embedded tourniquet with applied pressure and environmental logging
 \end{itemize}
+\vspace{-2pt}
 
 %-----------WORK EXPERIENCE-----------------
 \textbf{\fancyunderline{\Large Work Experience}}
 \vspace{4pt}
 
-\textbf{\large General Electric}
-\vspace{4pt}
+\textbf{\large General Electric Gas Power (GE Power)}
+\vspace{2pt}
 
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-5pt}\textbf{Digital Technology Leadership Program} & Bangor, ME \\
-        \hspace{7.5pt} \fancyunderline{Technical Project Manager} & \textit{\small February 2022 - Present} \\
+        \hspace{-2pt}\textbf{Digital Technology Leadership Program} & \textit{\small July 2020 -- Present} \\
+        \hspace{-2pt}2 Year Rotational Program -- 6 Month Rotations & Bangor, ME\vspace{4pt} \\
+        \hspace{7.5pt} \fancyunderline{Technical Project Manager} \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{indentDetails}
-        \item[$-$] Lead development and rollout of a global template standard of machine monitoring for condition-based maintenance that leverages Operational Technology (OT), cloud-native, \& Internet of Things (IoT) best practices
-        \item[$-$] Deploy digital Andon solution, Lean Product Manager (LPM), for gas Lean lines in Bangor, ME
+        \item[$-$] Develop a uniform solution for condition-based maintenance through machine monitoring and lead rollout to global factories, leveraging Operational Technology (OT), cloud-native, and Internet of Things (IoT) best practices
+        \item[$-$] Deploy digital Andon, an application that manages product manufacturing process errors with Lean methodology, to GE Gas Power factory floor by working with engineers to customize and trouble shoot solutions based on customer need
     \end{indentDetails}
-    \vspace{-2pt}
+    \vspace{-1pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-5pt} & Bangor, ME \\
-        \hspace{7.5pt} \fancyunderline{Aero DT Analyst - Managed Care} & \textit{\small August 2021 - January 2022} \\
+        \hspace{7.5pt} \fancyunderline{Aero DT Analyst - Managed Care} \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{indentDetails}
-        \item[$-$] Migrated 200+ commercial documents for 300+ downstream users to content management platform Seismic to support Gas Power Aeroderivatives New Unit growth of \$1.2B+ 
-        \item[$-$] Managed timelines \& supported gap-fit analysis of existing CRM processes vs. SFDC CRM solutions \& facilitated rollout of automations between Aero Alliance Joint Venture ERPs \& Gas Power systems
+        \item[$-$] Performed gap-fit analysis of existing CRM processes vs. SFDC CRM solutions and acted as project manager for rollout of automations between Aero Alliance Joint Venture ERPs and Gas Power systems
+        \item[$-$] Migrated 200+ commercial documents for 300+ downstream users to content management platform, Seismic, to support Gas Power Aeroderivatives New Unit growth of \$1.2B+ 
     \end{indentDetails}
-    \vspace{-2pt}
+    \vspace{-1pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-5pt} & Bangor, ME \\
-        \hspace{7.5pt} \fancyunderline{Digital Engineer} & \textit{\small February 2021 - July 2021} \\
+        \hspace{7.5pt} \fancyunderline{Digital Engineer} \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{indentDetails}
         \item[$-$] Piloted a scalable FreeRTOS IoT microcontroller standard to create machine data ingestion pipeline \\ compatible with AWS Lookout for Equipment, AWS Timestream, and Vimana
-        \item[$-$] Orchestrated condition based maintenance automation with Vimana \& Maximo to enable preventative maintenance Maximo workorders based on machine usage, saving over \$800k annually on materials, labor, and lost production
+        \item[$-$] Automated condition based mainenance through Vimana and Maximo to generate preventative workorders based on machine usage, saving over \$800k annually on materials, labor, and lost production
     \end{indentDetails}
-    \vspace{-6pt}
+    \vspace{-1pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-5pt} & Atlanta, GA \\
-        \hspace{7.5pt} \fancyunderline{Data Analyst} & \textit{\small July 2020 - January 2021} \\
+        \hspace{7.5pt} \fancyunderline{Data Analyst} \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{indentDetails}
-        \item[$-$] Created robust visualizations using SQL and Tableau and drive competitive intelligence and predictive insights on installed base \& SFDC data for product management teams to consume to improve GE Gas Power's order win rates
+        \item[$-$] Created robust visualizations using SQL and Tableau to drive competitive intelligence and predictive insights on installed base and SFDC data for product management teams to consume to improve GE Gas Power's order win rates by 4\%
     \end{indentDetails}
-    \vspace{-6pt}
+    \vspace{-1pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-5pt} & Schenectady, NY \\
-        \hspace{-7.5pt} \fancyunderline{Digital Techonology Leadership Program Intern: Lead Mobile Developer} & \textit{\small June 2019 - August 2019} \\
+        \hspace{-2pt}\textbf{Internships} & \textit{\small June 2019 -- August 2019} \\
+        \hspace{7.5pt} \fancyunderline{Lead Mobile Developer} & Schenectady, NY \\
     \end{tabular*}\vspace{-2.5pt}
-    \begin{details}
-        \item[$-$] Developed a responsive progressive web application \\ targeting mobile devices for an internal GE document management system which creates, sends, stores and archives contractual and commercial documents and correspondence for on-site \\ personnel, driving over \$200K of business benefits annually 
-    \end{details}
-    \vspace{-6pt}
+    \begin{indentDetails}
+        \item[$-$] Systemized internal GE document management by developing a responsive web application that creates, sends, stores, and archives contractual documentation and correspondence for on-site personnel through their mobile devices
+    \end{indentDetails}
+    \vspace{-4pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-5pt} & Bangor, ME \\
-        \hspace{-7.5pt} \fancyunderline{GE Power Early Identification Intern} & \textit{\small July 2018 - March 2019; December 2019 - June 2020} \\
+        \hspace{5pt} & \textit{\small July 2018 - March 2019; December 2019 -- June 2020} \\
+        \hspace{7.5pt} \fancyunderline{Fullstack Engineer} & Bangor, ME \\
     \end{tabular*}\vspace{-2.5pt}
-    \begin{details}
-        \item[$-$] Generated at-a-glance digital signage web applications that relay essential manufacturing data to supervisors and machinists
-    \end{details}
-
-    \vspace{2pt}
+    \begin{indentDetails}
+        \item[$-$] Generated at-a-glance digital signage web applications for operation leaders and shop floor machinists that relay critical manufacturing data and quality metrics
+    \end{indentDetails}
+    \vspace{0pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-5pt}\textbf{\large University of Maine} & Orono, ME \\
-        \hspace{-7.5pt} \fancyunderline{Teaching \& Research Assistant: College of Electrical and Computer Engineering} & \textit{\small August 2017 - May 2020} \\
+        \hspace{-5pt}\textbf{\large University of Maine} & \textit{\small August 2017 - May 2020} \\
+        \hspace{-7.5pt} \fancyunderline{Teaching and Research Assistant: College of Electrical and Computer Engineering} & Orono, ME \\
     \end{tabular*}\vspace{-2.5pt}
     \begin{details}
         \item[$-$] Programed ATXMega, STM32L4 boards with C and ARM assembly
