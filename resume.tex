@@ -1,8 +1,5 @@
 % % % % % % % % % % % % % % % % % % % % %
-%   Resume Template 2021                %
-%   *New and Updated*                   %
-%   *Modern and Sexy!*                  %
-%   Built with love by Z. Linkletter    %
+%   Resume Template 2026                %
 % % % % % % % % % % % % % % % % % % % % %
 
 \documentclass[10pt]{article}
@@ -13,7 +10,6 @@
 \usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{sectsty}
-\usepackage{tabu}
 \usepackage{contour}
 \usepackage{ulem}
 \usepackage{enumitem}
@@ -46,15 +42,6 @@
     \llap{\contour{white}{#1}}%
 }
 
-% WORK EXPERIENCE
-\newcommand{\resumeExperience}[4]{
-    \vspace{-2pt}
-    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-5pt}\textbf{#1} & #2 \\
-        \hspace{-5pt}\textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-10pt}
-}
-
 % EDUCATION
 \newcommand{\resumeEducation}[6]{
     \vspace{2pt}
@@ -64,12 +51,13 @@
         \hspace{-5pt}\textit{#5} & #6
         \vspace{2.5pt} \\
     \end{tabular*}
+    \vspace{5pt}
 }
 
 % FANCY DETAILS
 \newenvironment{details}
 { \begin{itemize}
-    \setlength{\itemsep}{0pt}
+    \setlength{\itemsep}{2pt}
     \setlength{\parskip}{0pt}
     \setlength{\parsep}{0pt}     
 }
@@ -77,7 +65,7 @@
 
 \newenvironment{indentDetails}
 { \begin{itemize}[leftmargin=*,labelindent=20pt]
-    \setlength{\itemsep}{0pt}
+    \setlength{\itemsep}{2pt}
     \setlength{\parskip}{0pt}
     \setlength{\parsep}{0pt}     
 }
@@ -90,14 +78,9 @@
     \vspace{5pt}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 
 {\Huge \name}
-\vspace{-8pt}
 
 %-----------HEADING-----------------
 \header{Bangor, ME}{\href{mailto:zack@linkletter.dev}{zack@linkletter.dev}}{(207) 672-6122}{\href{https://linkletter.dev}{https:\slash\slash linkletter.dev}}
@@ -112,88 +95,57 @@
 
 %-----------TECHNICAL SKILLS-----------------
 \textbf{\fancyunderline{\Large Technical Skills}}
-\vspace{-2pt}
 
 \begin{itemize}[leftmargin=0pt]
-    \textbf{Languages:} C/C++, JavaScript, Python, MATLAB, ARM Assembly, Rust, SQL, $\LaTeX$ \\
-    \textbf{Frameworks:} React, Gatsby, Next \\
-    \textbf{DevOps / Automation:} Docker, Podman, Kubernetes, Ansible, Terraform \\
-    \textbf{AWS Certifications:} Certified Cloud Practitioner, Developer, SysOps Administrator, Solutions Architect % \\
-    % \textbf{University Capstone:} Designed smart, embedded tourniquet with applied pressure and environmental logging
+    \textbf{Languages:} Python, C/C++, JavaScript, C\#, SQL, Rust, Bash \\
+    \textbf{Infrastructure / Automation:} Ansible, Terraform, Docker, Podman, Kubernetes, Linux \\
+    \textbf{AWS Certifications:} Certified Cloud Practitioner, Developer, SysOps Administrator, Solutions Architect
 \end{itemize}
-\vspace{-4pt}
 
 %-----------WORK EXPERIENCE-----------------
 \textbf{\fancyunderline{\Large Work Experience}}
-\vspace{2pt}
+\vspace{5pt}
 
-\textbf{\large General Electric Gas Power (GE Power)}
+\textbf{\large GE Vernova} \textit{\small (spun off from General Electric, April 2, 2024)}
 \vspace{-10pt}
 
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-2pt}& \textit{\small July 2022 -- Present} \\
-        \hspace{-2pt}\textbf{Senior Technical Product Manager}& Bangor, ME\vspace{4pt} \\
-    \end{tabular*}\vspace{-7.5pt}
+        \hspace{-2pt}& \textit{\small April 2025 -- Present} \\
+        \hspace{-2pt}\textbf{Site IT Leader (Staff Technical Project Manager)}& Bangor, ME \\
+    \end{tabular*}
     \begin{details}
-        \item[$-$] Own, develop, and expand digital Andon platform Lean Production Manager (LPM), an application that manages product manufacturing process defects with Lean methodology, to GE Gas Power factory floors by working with operators to customize and troubleshoot solutions based on customer need
-        \item[$-$] Partner with operators and site operations teams to identify shopfloor digitization opportunities and develop Operational Technology (OT) products that reduce cost of poor quality, increase on-time delivery, and modernize manufacturing processes
+        \item[$-$] Own site reliability and infrastructure for a 300+ employee manufacturing facility; serve as the technical bridge between IT HQ and on-site systems, ensuring uptime, security posture, and business continuity across production environments
+        \item[$-$] Executed site-wide infrastructure refresh of 129 wireless access points, 29 access switches, and WAN circuit \\ upgrade aligned with 2027--2029 gas turbine demand growth, coordinating across facilities, network, and operations stakeholders
+        \item[$-$] Defined and executed production system migration from Windows Server 2008 to 2025 and legacy PBX and HVAC readdressing, eliminating critical infrastructure risk with zero production impact during system transitions
     \end{details}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-2pt}\textbf{Digital Technology Leadership Program} & \textit{\small July 2020 -- July 2022} \\
-        \hspace{-2pt}2 Year Rotational Program -- 6 Month Rotations & Bangor, ME\vspace{4pt} \\
-        \hspace{7.5pt} \fancyunderline{Technical Project Manager} \\
-    \end{tabular*}\vspace{-2.5pt}
-    \begin{indentDetails}
-        \item[$-$] Developed a uniform solution for condition-based maintenance through machine monitoring and lead rollout to global factories, leveraging OT, cloud-native, and Internet of Things (IoT) best practices
-        \item[$-$] Deployed digital Andon platform LPM to Bangor, ME site and develop Ansible automation for application updates
-    \end{indentDetails}
-    \vspace{-1pt}
-    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{7.5pt} \fancyunderline{Aero DT Analyst - Managed Care} \\
-    \end{tabular*}\vspace{-2.5pt}
-    \begin{indentDetails}
-        \item[$-$] Performed gap-fit analysis of existing CRM processes vs. SFDC CRM solutions and acted as project manager for rollout of automations between Aero Alliance Joint Venture ERPs and Gas Power systems
-        \item[$-$] Migrated 200+ commercial documents for 300+ downstream users to content management platform, Seismic, to support Gas Power Aeroderivatives New Unit growth of \$1.2B+ 
-    \end{indentDetails}
-    \vspace{-1pt}
-    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{7.5pt} \fancyunderline{Digital Engineer} \\
-    \end{tabular*}\vspace{-2.5pt}
-    \begin{indentDetails}
-        \item[$-$] Piloted a scalable FreeRTOS IoT microcontroller standard to create machine data ingestion pipeline \\ compatible with AWS Lookout for Equipment, AWS Timestream, and Vimana
-        \item[$-$] Automated condition based maintenance through Vimana and Maximo to generate preventative workorders based on machine usage, saving over \$800k annually on materials, labor, and lost production
-    \end{indentDetails}
-    \vspace{-1pt}
-    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{7.5pt} \fancyunderline{Data Analyst} \\
-    \end{tabular*}\vspace{-2.5pt}
-    \begin{indentDetails}
-        \item[$-$] Created robust visualizations using SQL and Tableau to drive competitive intelligence and predictive insights on installed base and Salesforce data for product management teams to consume to improve GE Gas Power's order win rates by 4\%
-    \end{indentDetails}
-    \vspace{-2.5pt}
-    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-2pt}\textbf{Internships} & \textit{\small June 2019 -- August 2019} \\
-        \hspace{7.5pt} \fancyunderline{Lead Mobile Developer} & Schenectady, NY \\
-    \end{tabular*}\vspace{-2.5pt}
-    \begin{indentDetails}
-        \item[$-$] Systemized internal GE document management by developing a responsive web application that creates, sends, stores, and archives contractual documentation and correspondence for field personnel through their mobile devices
-    \end{indentDetails}
-    \vspace{-2.5pt}
-    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{5pt} & \textit{\small July 2018 - March 2019; December 2019 -- June 2020} \\
-        \hspace{7.5pt} \fancyunderline{Fullstack Engineer} & Bangor, ME \\
-    \end{tabular*}\vspace{-2.5pt}
-    \begin{indentDetails}
-        \item[$-$] Generated at-a-glance digital signage web applications for operation leaders and shop floor machinists that relay critical manufacturing data and quality metrics
-    \end{indentDetails}
-    \vspace{0pt}
-    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-5pt}\textbf{\large University of Maine} & \textit{\small August 2017 - May 2020} \\
-        \hspace{-7.5pt} \fancyunderline{Teaching and Research Assistant: College of Electrical and Computer Engineering} & Orono, ME \\
-    \end{tabular*}\vspace{-2.5pt}
+        \hspace{-2pt}\textbf{Senior Technical Product Manager}& \textit{\small July 2022 -- April 2025} \\
+        \hspace{-2pt}& Bangor, ME \\
+    \end{tabular*}
     \begin{details}
-        \item[$-$] Programed ATXMega, STM32L4 boards with C and ARM assembly
-        \item[$-$] Translated Arudino C code to STM32 C code for radar devices that determine wild beehive health
+        \item[$-$] Established OT-to-IT network data pipeline across distributed manufacturing sites to AWS infrastructure using AWS Greengrass and local IoT deployments
+        \item[$-$] Owned digital Andon platform (LPM) across GE Vernova factory floors; managed scope, stakeholder alignment, and platform delivery
+        \item[$-$] Partnered with site operations teams using Lean principles to identify shop floor digitization opportunities and deliver Operational Technology (OT) products that reduced cost of poor quality and improved on-time delivery
+    \end{details}
+\textbf{\large General Electric Gas Power}
+
+    \vspace{4pt}
+    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
+        \hspace{-2pt}\textbf{Digital Technology Leadership Program} & \textit{\small July 2020 -- July 2022} \\
+        \hspace{-2pt}2 Year Rotational Program -- 6 Month Rotations & Bangor, ME \\
+    \end{tabular*}
+    \begin{details}
+        \item[$-$] \textbf{Technical Project Manager:} Authored Ansible automation for application lifecycle management of the LPM Andon platform and led factory rollout at Bangor; coordinated cross-functional teams and drove change management to support adoption across cloud-native, OT, and IoT stacks
+        \item[$-$] \textbf{Aero DT Analyst -- Managed Care:} Managed ERP automation rollout across Aero Alliance JV systems; migrated 200+ commercial documents to Seismic for 300+ users supporting \$1.2B+ Aeroderivatives growth, coordinating across JV partners and DT HQ stakeholders
+        \item[$-$] \textbf{Digital Engineer:} Designed scalable FreeRTOS IoT microcontroller standard for machine telemetry ingestion into AWS Lookout for Equipment, Timestream, and Vimana; automated condition-based maintenance workorder generation via Vimana/Maximo, saving \$800k+ annually
+        \item[$-$] \textbf{Data Analyst:} Built SQL and Tableau dashboards on installed base and Salesforce data to drive competitive intelligence, improving GE Gas Power order win rates
+    \end{details}
+    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
+        \hspace{-2pt}\textbf{Internships} & \textit{\small June 2018 -- June 2020} \\[2pt]
+        \hspace{-2pt}\textit{\small Lead Mobile Developer / Fullstack Engineer} & \textit{\small Schenectady, NY \& Bangor, ME} \\
+    \end{tabular*}
+    \begin{details}
+        \item[$-$] Built responsive web application for mobile field documentation management; built real-time digital signage surfacing manufacturing and quality metrics to shop floor operators
     \end{details}
 
 \end{document}
