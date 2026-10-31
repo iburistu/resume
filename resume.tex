@@ -1,10 +1,5 @@
-% % % % % % % % % % % % % % % % % % % % %
-%   Resume Template 2026                %
-% % % % % % % % % % % % % % % % % % % % %
-
 \documentclass[10pt]{article}
 
-%-----------NECESSARY PACKAGES-----------------
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
@@ -15,24 +10,16 @@
 \usepackage{enumitem}
 \usepackage{microtype}
 
-%-----------FONT-----------------
-\usepackage[sc,osf]{mathpazo}
+\usepackage[sc]{mathpazo}
 \allsectionsfont{\sffamily}
 
-%-----------COMPATIBILITY-----------------
 \input{glyphtounicode}
 \pdfgentounicode=1
 
-%----------SETUP----------------- 
 \pagenumbering{gobble}
-% NAME HERE!
 \def\name{Zachary Linkletter}
-% Remove paragraph indentation
 \setlength\parindent{0pt}
-% Set up the header spacing
 \def\headerSpace{40pt}
-
-%----------CUSTOM COMMANDS----------------- 
 
 \renewcommand{\ULdepth}{1.8pt}
 \contourlength{1.15pt}
@@ -42,7 +29,6 @@
     \llap{\contour{white}{#1}}%
 }
 
-% EDUCATION
 \newcommand{\resumeEducation}[6]{
     \vspace{2pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
@@ -54,73 +40,55 @@
     \vspace{5pt}
 }
 
-% FANCY DETAILS
 \newenvironment{details}
-{ \begin{itemize}
-    \setlength{\itemsep}{2pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}     
+{ 
+    \begin{itemize}
+        \vspace{-2pt}
+        \setlength{\itemsep}{2pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0pt}     
 }
-{ \end{itemize}}
+{ 
+    \end{itemize}
+} 
 
-\newenvironment{indentDetails}
-{ \begin{itemize}[leftmargin=*,labelindent=20pt]
-    \setlength{\itemsep}{2pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}     
-}
-{ \end{itemize}} 
-
-% HEADER
 \newcommand{\header}[4]{
-    \vspace{7pt}
-    #1\hspace{\headerSpace}|\hspace{\headerSpace}#2\hspace{\headerSpace}|\hspace{\headerSpace}#3\hspace{\headerSpace}|\hspace{\headerSpace}#4
     \vspace{5pt}
+    #1\hspace{\headerSpace}|\hspace{\headerSpace}#2\hspace{\headerSpace}|\hspace{\headerSpace}#3\hspace{\headerSpace}|\hspace{\headerSpace}#4
+    \vspace{0pt}
 }
 
 \begin{document}
 
 {\Huge \name}
 
-%-----------HEADING-----------------
 \header{Bangor, ME}{\href{mailto:zack@linkletter.dev}{zack@linkletter.dev}}{(207) 672-6122}{\href{https://linkletter.dev}{https:\slash\slash linkletter.dev}}
 
-%-----------EDUCATION-----------------
-\textbf{\fancyunderline{\Large Education}}
-\vspace{4pt}
-
-\resumeEducation
-    {University of Maine}{Orono, ME}
-    {Bachelor of Science, Computer Engineering}{Graduated May 2020}{Bachelor of Science, Electrical Engineering}{GPA: 3.58}
-
-%-----------TECHNICAL SKILLS-----------------
-\textbf{\fancyunderline{\Large Technical Skills}}
-
-\begin{itemize}[leftmargin=0pt]
-    \textbf{Languages:} Python, C/C++, JavaScript, C\#, SQL, Rust, Bash \\
-    \textbf{Infrastructure / Automation:} Ansible, Terraform, Docker, Podman, Kubernetes, Linux \\
-    \textbf{AWS Certifications:} Certified Cloud Practitioner, Developer, SysOps Administrator, Solutions Architect
-\end{itemize}
-
-%-----------WORK EXPERIENCE-----------------
 \textbf{\fancyunderline{\Large Work Experience}}
 \vspace{5pt}
 
 \textbf{\large GE Vernova} \textit{\small (spun off from General Electric, April 2, 2024)}
-\vspace{-10pt}
 
+    \vspace{2pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-2pt}& \textit{\small April 2025 -- Present} \\
-        \hspace{-2pt}\textbf{Site IT Leader (Staff Technical Project Manager)}& Bangor, ME \\
+        \hspace{-2pt}\textbf{Senior Manager -- Program Management (M\&A / BD IT Integration)}& \textit{\small June 2026 -- Present} \\
     \end{tabular*}
     \begin{details}
-        \item[$-$] Own site reliability and infrastructure for a 300+ employee manufacturing facility; serve as the technical bridge between IT HQ and on-site systems, ensuring uptime, security posture, and business continuity across production environments
-        \item[$-$] Executed site-wide infrastructure refresh of 129 wireless access points, 29 access switches, and WAN circuit \\ upgrade aligned with 2027--2029 gas turbine demand growth, coordinating across facilities, network, and operations stakeholders
+        \item[$-$] Lead IT integration, cutover, and Day 1 delivery for two concurrent Gas Power capacity expansion programs, spanning infrastructure and business application readiness, managing a \$5.5M IT budget and reporting status weekly to senior leadership and monthly to the CIO
+        \item[$-$] Stand up a new generator value stream site within an existing facility for 300+ employees, driving ERP and MES readiness and cross-functional execution through go-live
+        \item[$-$] Own IT build-out and legacy-site cutover for the relocation of repair operations into a net-new 150k sqft facility scaling to 400+ employees by 2030
+        % \item[$-$] Assess target IT environments and integration scope during M\&A diligence to inform deal planning
+    \end{details}
+    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
+        \hspace{-2pt}\textbf{Site IT Leader (Staff Technical Project Manager)}& \textit{\small April 2025 -- June 2026} \\
+    \end{tabular*}
+    \begin{details}
+        \item[$-$] Owned site reliability, security posture, and business continuity for a 350+ employee manufacturing facility as the technical bridge between IT HQ and site operations, directing three contractors (two help desk, one application support) and coaching the team toward strategic partnership with the business
+        \item[$-$] Built the case for a site-wide infrastructure refresh by aligning facilities, operations, and IT leadership around the risk of aging infrastructure, then delivered it (129 wireless access points, 29 access switches, WAN upgrade) sequenced around production and aligned to 2027--2029 gas turbine demand growth
         \item[$-$] Defined and executed production system migration from Windows Server 2008 to 2025 and legacy PBX and HVAC readdressing, eliminating critical infrastructure risk with zero production impact during system transitions
     \end{details}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
         \hspace{-2pt}\textbf{Senior Technical Product Manager}& \textit{\small July 2022 -- April 2025} \\
-        \hspace{-2pt}& Bangor, ME \\
     \end{tabular*}
     \begin{details}
         \item[$-$] Established OT-to-IT network data pipeline across distributed manufacturing sites to AWS infrastructure using AWS Greengrass and local IoT deployments
@@ -132,7 +100,7 @@
     \vspace{4pt}
     \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
         \hspace{-2pt}\textbf{Digital Technology Leadership Program} & \textit{\small July 2020 -- July 2022} \\
-        \hspace{-2pt}2 Year Rotational Program -- 6 Month Rotations & Bangor, ME \\
+        \hspace{-2pt}2 Year Rotational Program -- 6 Month Rotations & \\
     \end{tabular*}
     \begin{details}
         \item[$-$] \textbf{Technical Project Manager:} Authored Ansible automation for application lifecycle management of the LPM Andon platform and led factory rollout at Bangor; coordinated cross-functional teams and drove change management to support adoption across cloud-native, OT, and IoT stacks
@@ -140,12 +108,21 @@
         \item[$-$] \textbf{Digital Engineer:} Designed scalable FreeRTOS IoT microcontroller standard for machine telemetry ingestion into AWS Lookout for Equipment, Timestream, and Vimana; automated condition-based maintenance workorder generation via Vimana/Maximo, saving \$800k+ annually
         \item[$-$] \textbf{Data Analyst:} Built SQL and Tableau dashboards on installed base and Salesforce data to drive competitive intelligence, improving GE Gas Power order win rates
     \end{details}
-    \begin{tabular*}{1.015\textwidth}{l@{\extracolsep{\fill}}r}
-        \hspace{-2pt}\textbf{Internships} & \textit{\small June 2018 -- June 2020} \\[2pt]
-        \hspace{-2pt}\textit{\small Lead Mobile Developer / Fullstack Engineer} & \textit{\small Schenectady, NY \& Bangor, ME} \\
-    \end{tabular*}
-    \begin{details}
-        \item[$-$] Built responsive web application for mobile field documentation management; built real-time digital signage surfacing manufacturing and quality metrics to shop floor operators
-    \end{details}
+
+\textbf{\fancyunderline{\Large Education}}
+\vspace{4pt}
+
+\resumeEducation
+    {University of Maine}{Orono, ME}
+    {Bachelor of Science, Computer Engineering}{Graduated May 2020}{Bachelor of Science, Electrical Engineering}{GPA: 3.58}
+
+\textbf{\fancyunderline{\Large Technical Skills}}
+
+\begin{itemize}[leftmargin=0pt]
+    \textbf{Program Management:} IT integration, ERP (SAP) and MES readiness, cutover and Day 1 delivery, M\&A diligence, risk and dependency management, cross-functional stakeholder leadership \\
+    \textbf{Infrastructure / Automation:} Networking, AWS, Ansible, Terraform, Linux, Python, SQL \\
+    \textbf{AWS Certifications (lapsed, [2020 -- 2022]):} Cloud Practitioner, Developer, SysOps Administrator, Solutions Architect
+\end{itemize}
+
 
 \end{document}
